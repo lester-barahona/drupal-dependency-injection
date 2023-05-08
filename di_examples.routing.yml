@@ -1,0 +1,14 @@
+di_examples.test:
+  path: '/di-examples/test' 
+  defaults: 
+    _controller: '\Drupal\di_examples\Controller\ExampleController::content' 
+    _title: 'DI examples'
+  requirements: 
+    _permission: 'access content'
+di_examples.form:
+  path: '/di-examples/form'
+  defaults:
+    _form: 'Drupal\di_examples\Form\ExampleForm'
+    _title: 'Simple custom form example'
+  requirements:
+    _permission: 'access content'

@@ -1,0 +1,5 @@
+services:
+  di_examples.logger:
+    class: Drupal\di_examples\Services\LoggerService
+    arguments:
+      - '@logger.factory'
